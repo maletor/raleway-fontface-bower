@@ -2,6 +2,22 @@
   "name": "raleway-fontface",
   "version": "0.1.0",
   "description": "A simple package providing the Raleway fontface.",
+  "license": "MIT",
+  "keywords": [
+    "raleway",
+    "raleway-bold",
+    "raleway-extrabold",
+    "raleway-heavy",
+    "raleway-light",
+    "raleway-extralight",
+    "raleway-medium",
+    "raleway-regular",
+    "raleway-semibold",
+    "raleway-thin",
+    "webfonts",
+    "web",
+    "fonts"
+  ],
   "main": [
     "./css/raleway-fontface.css",
     "./fonts/Raleway-Black.eot",
