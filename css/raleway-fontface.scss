@@ -1,0 +1,37 @@
+$raleway-font-path: '../fonts' !default;
+
+@mixin raleway-font($type, $weight, $style: normal) {
+    @font-face {
+        font-family: 'Raleway';
+        src: url('#{$raleway-font-path}/Raleway-#{$type}.eot');
+        src: url('#{$raleway-font-path}/Raleway-#{$type}.eot?#iefix') format('embedded-opentype'),
+             url('#{$raleway-font-path}/Raleway-#{$type}.woff2') format('woff2'),
+             url('#{$raleway-font-path}/Raleway-#{$type}.woff') format('woff'),
+             url('#{$raleway-font-path}/Raleway-#{$type}.ttf') format('truetype'),
+             url('#{$raleway-font-path}/Raleway-#{$type}.svg#Raleway') format('svg');
+        font-weight: $weight;
+        font-style: $style;
+    }
+
+    @font-face {
+        font-family: 'Raleway-#{$type}';
+        src: url('#{$raleway-font-path}/Raleway-#{$type}.eot');
+        src: url('#{$raleway-font-path}/Raleway-#{$type}.eot?#iefix') format('embedded-opentype'),
+             url('#{$raleway-font-path}/Raleway-#{$type}.woff2') format('woff2'),
+             url('#{$raleway-font-path}/Raleway-#{$type}.woff') format('woff'),
+             url('#{$raleway-font-path}/Raleway-#{$type}.ttf') format('truetype'),
+             url('#{$raleway-font-path}/Raleway-#{$type}.svg#Raleway') format('svg');
+    }
+}
+
+@mixin raleway-font-pair($type, $weight) {
+    @include raleway-font($type, $weight);
+    @include raleway-font(#{$type}Italic, $weight, italic);
+}
+
+@include raleway-font-pair('Thin', 100);
+@include raleway-font-pair('Light', 300);
+@include raleway-font-pair('Regular', 400);
+@include raleway-font-pair('Medium', 500);
+@include raleway-font-pair('Bold', 700);
+@include raleway-font-pair('Black', 900);

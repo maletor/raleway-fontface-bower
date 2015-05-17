@@ -1,0 +1,20 @@
+{
+  "name": "raleway-fontface",
+  "version": "0.1.0",
+  "description": "A simple package providing the Raleway fontface.",
+  "main": [
+    "./css/raleway-fontface.css",
+    "./fonts/Raleway-Black.eot",
+    "./fonts/Raleway-Black.svg",
+    "./fonts/Raleway-Black.ttf",
+    "./fonts/Raleway-Black.woff",
+    "./fonts/Raleway-Black.woff2"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
