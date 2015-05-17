@@ -1,6 +1,6 @@
 # Raleway fontface
 
-A simple package providing the [Raleway](http://www.google.com/fonts/specimen/Raleway) fontface. The font was created by Matt McInerney and Pablo Impallari.
+A simple package providing the [Raleway](http://www.google.com/fonts/specimen/Raleway) fontface. The font was originally created by [Matt McInerney](http://matt.cc/).
 
 ## Installing
 
